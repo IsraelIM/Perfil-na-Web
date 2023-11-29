@@ -2,139 +2,183 @@
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="image/logo_page.png" type="image/png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
     <link rel="stylesheet" href="paint.css">
     <link rel="stylesheet" href="image/css/font-awesome.css">
     <link rel="stylesheet" href="image/css/font-awesome.min.css">
 </head>
-<body>
+<body id="all-document">
     <!-- Cabeçario -->
     <header class="header">
-        <a href="#" class="logo">Portfolio</a>
+        <a href="#" class="logo">Portifolio</a>
+        <i class="fa fa-navicon" id="menu-icon-top"></i>
         <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#portifolio">Portfolio</a>
-            <a href="#contact">Contact</a>
+            <a href="#about">Sobre Me</a>
+            <a href="#services">Serviços</a>
+            <a href="#portifolio">Projectos</a>
+            <a href="#contact">Contactar</a>
+            <a href="#" id="view-mode">Dark Mode <i class="fa fa-toggle-on"></i></a>
         </nav>
     </header>
-
     <!--Home User-->
-    <section class="home" id="home">
+    <section class="home top-10" id="home">
         <div class="home-content top-10">
-            <h3>Hello! About Me</h3>
+            <h3>Ola! 👋</h3>
             <h1>Israel Morais</h1>
-            <h3>And I'm a <span>Backend Developer</span></h3>
-            <p>Lorem ipsum dolor sit amet consectetur 
-            adipisicing elit. Reiciendis obcaecati optio
-             velit ex quia. Totam nisi ad est nulla, 
-             consequuntur cum iure autem laborum similique
-             minus, tempora amet placeat debitis?</p>
+            <h3>Profissional <span class="multiple-text"></span></h3>
+            <p>É um prazer me apresentar como um experiente programador com mais de 8 anos de experiência
+               na area tecnologica, Ao longo dos anos, tive a honra de trabalhar em projetos desafiadores e 
+               inovadores, empregando minha profunda compreensão de varias linguagens de programação " C#, ASP.Net, Java, Web, PHP " e minha paixão pela 
+               criação de soluções robustas e eficientes.</p>
             <div class="social-media-full">
-                <a href="#" class="social-media"><i class="fa fa-facebook"></i></a>
-                <a href="#" class="social-media"><i class="fa fa-twitter"></i></a>
-                <a href="#" class="social-media"><i class="fa fa-instagram"></i></a>
-                <a href="#" class="social-media"><i class="fa fa-linkedin"></i></a>
-            </div>
-            <a target="_blank" href="https://drive.google.com/file/d/1KaBa1kcMDozOKAcR-apwWx1O_k6CLRRO/view?usp=drive_link" class="btn">
-               <i class="fa fa-arrow-down"></i> Download Curriculum
-            </a>
+                <a target="_blank" class="social-media" href="https://www.facebook.com/israelemanuel.dnascimento/" ><i class="fa fa-facebook"></i></a>
+                <a target="_blank" class="social-media" href="https://github.com/IsraelIM" ><i class="fa fa-git"></i></a>
+                <a target="_blank" class="social-media" href="https://www.linkedin.com/in/israel-nascimento-morais/" ><i class="fa fa-linkedin"></i></a>
+                <a target="_blank" class="social-media" href="https://wa.me/944960065" ><i class="fa fa-whatsapp"></i></a>
+                <br>
+                <a class="btn" target="_blank" href="https://drive.google.com/file/d/1KaBa1kcMDozOKAcR-apwWx1O_k6CLRRO/view?usp=drive_link">
+                    <i class="fa fa-arrow-down"></i> Download Curriculum
+                 </a></div>
         </div>
         <div class="home-img top-10">
             <img  src="image/user.png" alt="my photo">
         </div>
     </section>
-
     <!--About User-->
     <section class="about" id="about">
-        <div class="about-img">
+        <div class="about-img top-10">
             <img src="image/user3.png" alt="photo user">
         </div>
-        <div class="about-content">
-            <h2 class="heading">About <span>Me</span></h2>
-            <h3>Backend Developer</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam maxime quibusdam pariatur dignissimos nobis possimus nihil ex corrupti! Dolorum in magnam itaque, tenetur sed reprehenderit quibusdam at sint impedit cumque?</p>
-            <a href="#" class="btn"> Read More</a>
+        <div class="about-content top-10">
+            <h2 class="heading">Sobre <span>Me</span></h2>
+            <h3><span class="multiple-text-2"></span></h3>
+            <p>Israel Emanuel Nascimento Morais, de nacionalidade angolana com 23 anos de Idade
+                Enginheiro informático formado pela Universidade de Luanda Instituto INSTIC (Ex ISUTIC)
+                especialista em programação, com varias formações no ramo tecnologico.
+            </p>
+            <div class="hability">
+            <h4>Formações Adicionais</h4>
+            <p>
+                Formações na area de tecnologia como <strong>HCNA Routing and Switching</strong>,
+                Implatação e gerenciamento de cameras de vigilancia <strong>CCTV</strong>, Comunicação 
+                por Satelites Instalação e Manutenção de <strong>Antenas VSAT</strong>, tecnologia de redes
+                convergentes <strong>I.T</strong> criação de projcto electronico com o sistema
+                <strong>Arduino</strong>.
+            </p>
+            <p id="about-more">
+                Em 2018 o meu projecto <strong>Sistema Gestão Escolar</strong> com enfase no pagamento e
+                e contro das propinas de cada estudante recebeu medalha de 2º luagr na V jornadas cintifica
+                da universidade.
+            </p>
+            </div>
+            <div class="hability none" >
+                <h4>Experiências Profissional</h4>
+            <p class="about-more">
+                Em 2019 foi destado como <strong>melhor estudante do Iº trimestre</strong> do 2º ano do curso de Engenharia infomatica
+                no Instituto INSTIC (Ex ISUTIC).
+                <br><br>
+                No final de 2019 assinei um contrato como <strong>programador Júnior</strong> do projeto BISNO, que teve o seu fim
+                prematuro por conta da pandamia COVID-19.
+                <br><br>
+                Em 2021 assume a posição de <strong>Presidente da Associação dos Estudantes</strong> da instituição
+                ate o comprimento do meu primeiro e unico mandato que finalizaou em 2023.
+                <br><br>
+                Em 2023 assinei um contrato de trabalho com a <strong>Administração Municipal de Viana</strong>,
+                onde respondo como responsavel pelo <strong>Suporte tecnologico da Direcção Municipal da Agricultura,
+                Pecuaria e Pescas</strong>.
+            </p>
+            </div>
+            <a href="#about-more" class="btn" id="about-read">Ler mais</a>
         </div>
     </section>
-
     <!--Server User-->
-    <section class="services" id="services">
-        <h2 class="heading">Our <span>Services</span></h2>
+    <section class="services top-10" id="services">
+        <h2 class="heading">Meus <span>Serviços</span></h2>
         <div class="services-container">
             <div class="services-box">
                 <i class="fa fa-code"></i>
-                <h3>Web Development</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt debitis blanditiis sequi aut eius iusto tenetur repellendus consequuntur velit animi</p>
-                <a href="#" class="btn">Read More</a>
+                <h3>Programação</h3>
+                  <p>C#, ASP.Net, SQL <br>
+                    HTML, CSS, PHP,  C, Java<br>
+                    WordPress, JavaScript, AngularJS
+                </p>
+                <a href="#about" class="btn">Ler mais</a>
             </div>
             <div class="services-box">
                 <i class="fa fa-terminal"></i>
-                <h3>Desegin</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt debitis blanditiis sequi aut eius iusto tenetur repellendus consequuntur velit animi</p>
-                <a href="#" class="btn">Read More</a>
+                <h3>Code</h3>
+                <p>
+                    API <br>
+                    Bibloteca <br>
+                    Free Software
+                </p>
+                <a href="https://github.com/IsraelIM" class="btn"><i class="fa fa-github"></i> Ver mais</a>
             </div>
             <div class="services-box">
                 <i class="fa fa-book"></i>
-                <h3>Reader</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt debitis blanditiis sequi aut eius iusto tenetur repellendus consequuntur velit animi</p>
-                <a href="#" class="btn">Read More</a>
+                <h3>Livro de Suporte</h3>
+                <p>
+                    Codigo Limpo <br>
+                    O Poder do Habito <br>
+                    Os segredos de uma mente milionaria
+                </p>
+                <a href="#about" class="btn">Ler mais</a>
             </div>
         </div>
     </section>
 
     <!--Portilolio-->
-    <section class="portifolio" id="portifolio">
-        <h2 class="heading">
-            Lastest <span>Project</span>
+    <section class="portifolio top-10" id="portifolio">
+        <h2 class="heading top-10">
+            Ultimas <span>Actividades</span>
         </h2>
         <div class="portifolio-container">
             <div class="portifolio-box">
-                <img src="image/g3.jpg" alt="PJ1">
+                <img src="image/user3_original.jpg" alt="PJ1">
                 <div class="portifolio-layer">
-                    <h4>Web Desegin</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus hic rerum ex! Maxime, molestias, minus veniam maiores aliquid, explicabo officia</p>
-                    <a href="#"><i class="fa fa-link-external"></i></a>
+                    <h4>Cerimonia</h4>
+                    <p>Cerimonia de premiaçoes da jornadas cientificas VI, realizadas em 2019 onde recebi a minha preminhaçao</p>
+                    <a href="#"><i class="fa fa-graduation-cap"></i></a>
                 </div>
             </div>
             <div class="portifolio-box">
-                <img src="image/g5.jpg" alt="PJ2">
+                <img src="image/user_fau1.jpg" alt="PJ2">
                 <div class="portifolio-layer">
-                    <h4>Painet</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus hic rerum ex! Maxime, molestias, minus veniam maiores aliquid, explicabo officia</p>
-                    <a href="#"><i class="fa fa-link-external"></i></a>
+                    <h4>Forum</h4>
+                    <p>Forum de Redes convergentes realizado em 2020 pelo MTNTIC, com fouco no envolvimento das mulheres no sector tecnologico</p>
+                    <a href="#"><i class="fa fa-quote-right"></i></a>
                 </div>
             </div>
             <div class="portifolio-box">
-                <img src="image/bg1.png" alt="PJ1">
+                <img src="image/user_fau.jpg" alt="PJ3">
                 <div class="portifolio-layer">
-                    <h4>Admin</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus hic rerum ex! Maxime, molestias, minus veniam maiores aliquid, explicabo officia</p>
-                    <a href="#"><i class="fa fa-link-external"></i></a>
+                    <h4>Visita</h4>
+                    <p>Visita de sua Excelencia ministro das tecnologia de infomaçao e comunicaçao Manuel Homem.</p>
+                    <a href="#"><i class="fa fa-coffee"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
     <!--Contacto User-->
-    <section class="contact" id="contact">
+    <section class="contact top-10" id="contact">
         <h2 class="heading">
-            Contact <span>Me</span>
+            Contacta <span>Me</span>
         </h2>
         <form action="#">
             <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="E-mail">
+                <input type="text" placeholder="Nome Completo">
+                <input required type="email" placeholder="E-mail*: example@domino">
             </div>
             <div class="input-box">
-                <input type="number" placeholder="Phone number">
-                <input type="text" placeholder="Email subject">
+                <input type="number" placeholder="Numero Telefone: +244 ">
+                <input type="text" placeholder="Assunto Email">
             </div>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <textarea required name="" id="" cols="30" rows="10" placeholder="Escreva aqui a sua interversão*"></textarea>
             <button type="submit" class="btn">
-                Send Message 
+                Enviar Mensagem 
                 <i class="fa fa-send"></i>
             </button>
         </form>
@@ -143,13 +187,20 @@
     <!--Rodape-->
     <footer class="footer">
         <div class="footer-text">
-            <p>Copyright &copy; 2024 by Isarel Morais | All Rights Reserved</p>
+            <p>Copyright &copy; 2024 by <strong>Isarel Emanuel do Nascimento Morais</strong> <span id="all">| Desenvolvedor</span></p>
         </div>
         <div class="footer-iconTop">
             <a href="#home"><i class="fa fa-arrow-up"></i></a>
         </div>
     </footer>
-    <!-- JavaScript-->
+    <!--JavaScrip Typed>
+    <script src="https://cdn.jsdelevr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script-->
+    <script src="image/js/typed.js"></script>
+    <!--JavaScrip Scroll-->
+    <!--script src="https://unpkg.com/scrollreveal"></script-->
+    <script src="image/js/scroll.js"></script>
+    <!-- JavaScript Geral-->
     <script src="power.js"></script>
 </body>
 </html>

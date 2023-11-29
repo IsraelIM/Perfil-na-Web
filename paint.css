@@ -15,10 +15,13 @@
     --text-color:#fff;
     --main-color:#0ef;
 }
+/*Geral Codigo*/
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 .top-10{
     margin-top: 10rem;
 }
-
 html{
     font-size: 62.5%;
     overflow-x: hidden;
@@ -43,6 +46,9 @@ section{
     align-items: center;
     z-index: 100;
 }
+.header.sticky{
+    border-bottom: .1rem solid rgba(0, 0, 0 .2);
+}
 .logo{
     font-size: 2.5rem;
     color: var(--text-color);
@@ -58,7 +64,14 @@ section{
 .navbar a.active{
     color: var(--main-color);
 }
-#menu-icon{
+.navbar #view-mode i{
+    font-size: 3rem;
+    position: absolute;
+    margin-top: -.5rem;
+    margin-left: .5rem;
+    color: var(--main-color);
+}
+#menu-icon-top{
     font-size: 3.6rem;
     color: var(--text-color);
     display: none;
@@ -81,7 +94,9 @@ section{
     line-height: 1.3;
 }
 .home-content p{
-    font-size: 1.6rem;
+    margin-top: 2rem;
+    font-size: 2rem;
+    line-height: 3rem;
     text-align: justify;
 }
 span{
@@ -121,6 +136,20 @@ span{
 .btn:hover{
     box-shadow: none;
 }
+.fa-arrow-down{
+    animation: animar 2s ease-in-out infinite;
+}
+@keyframes animar {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-1rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
 .home-img img{
     width: 30vw;
 }
@@ -133,6 +162,9 @@ span{
 .about-img img{
     width: 35vw;
 }
+.about-content{
+    width: 50%;
+}
 .heading{
     text-align: center;
     font-size: 4.5rem;
@@ -144,13 +176,33 @@ span{
 .about-content h3{
     font-size: 2.6rem;
 }
-.about-content p{
-    font-size: 1.6rem;
-    margin: 2rem 0 3rem;
+.about-content .hability{
+    background: var(--second-bg-color);
+    border-radius: 1rem;
+    padding: 3rem;
+    margin-bottom: 1.5rem;
+}
+.about-content .hability h4{
+    font-size: 2rem;
+}
 
+.about-content p{
+    font-size: 2rem;
+    line-height: 3rem;
+    margin: 2rem 0 3rem;
+    text-align: justify;
+}
+.about-more, .none{
+    transition: 2s ease-in-out;
+    display: none;
+}
+.services, .portifolio-container{
+    width: 95%;
+    margin: auto;
 }
 .services h2{
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
+
 }
 .services-container{
     display: flex;
@@ -172,9 +224,12 @@ span{
     border-color:var(--main-color);
     transform: scale(1.02);
 }
-.services-box i{
+.services-box > i {
     font-size: 7rem;
     color: var(--main-color);
+}
+.services-box a i{
+    font-size: 2.5rem;
 }
 .services-box h3{
     font-size: 2.6rem;
@@ -182,9 +237,6 @@ span{
 .services-box p{
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
-}
-.portifolio{
-    background: var(--second-bg-color);
 }
 .portifolio h2{
     margin-bottom: 4rem;
@@ -204,6 +256,7 @@ span{
 }
 .portifolio-box img{
     width: 100%;
+    height: 35vw;
 }
 .portifolio-box .portifolio-layer{
     position: absolute;
@@ -241,14 +294,14 @@ span{
     border-radius: 50%;
 }
 .portifolio-layer a i{
-    font-size: 2rem;
+    font-size: 3rem;
     color: var(--bg-color);
 }
 .contact h2{
     margin-bottom: 3rem;
 }
 .contact form{
-    max-width: 70rem;
+    width: 80%;
     margin: 1rem auto;
     text-align: center;
     margin-bottom: 3rem;
@@ -274,6 +327,10 @@ span{
     margin-top: 2rem;
     cursor: pointer;
 }
+.contact form input:hover, .contact form textarea:hover{
+    border: 1px solid var(--main-color);
+    transform: scale(1.02);
+}
 .footer{
     display: flex;
     justify-content: space-between;
@@ -283,7 +340,7 @@ span{
     background: var(--second-bg-color);
 }
 .footer-text p{
-    font-size: 1,6rem;
+    font-size: 1.5rem;
 }
 .footer-iconTop a{
     display: inline-flex;
@@ -296,7 +353,133 @@ span{
 .footer-iconTop a:hover{
     box-shadow: 0 0 1rem var(--main-color);
 }
+.footer #all{
+    color: white;
+}
 .footer-iconTop a i {
     font-size: 2.4rem;
     color: var(--second-bg-color);
+}
+/*
+
+//Controlo de varias Tela
+
+
+*/
+/*Responsividade*/
+@media (max-width: 991px) {
+    .header{
+        padding: 2rem 3%;
+    }
+    .selection{
+        padding: 10rem 3% 2rem;
+    }
+    .footer{
+        padding: 2rem 3%;
+    }
+}
+@media (max-width: 768px) {
+    :root{
+        --bg-color:#fff;
+        --second-bg-color:#e3e6f3;
+        --text-color:#1a1a1a;
+        --main-color:#088178;
+    }
+    .heading, h3{
+        font-size: 2.5rem;
+    }
+    #menu-icon-top{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        display: none;
+    }
+    .navbar .active{
+        display: block;
+    }
+    .navbar a{
+        display: block;
+        font-size: 1.5rem;
+        margin: 3rem 0;
+    }
+    .navbar #view-mode i{
+        font-size: 2rem;
+        margin-top: .01rem;
+    }
+    .home{
+        flex-direction: column;
+        margin-top: 0rem;
+    }
+    .home-content, .about-content{
+        width: 95%;
+    }
+    .home-content h3{
+        font-size: 2.6rem;
+    }
+    .home-content h1{
+        font-size: 5rem;
+    }
+    .home-content .btn, .social-media-full{
+       text-align: center;
+
+    }
+    .home-img img, .about-img img{
+        width: 70vw;
+        margin-top: -10rem;
+    }
+    .about{
+        flex-direction: column-reverse;
+        margin-top: -5rem;
+    }
+    .about-content p, p{
+        font-size: 12pt;
+        padding: .3rem;
+        margin: 1rem;
+    }
+    .portifolio-box h4, .portifolio-box p
+    .portifolio-box a{
+        font-size: .1rem;
+    }
+    .contact form .input-box input{ width: 100%;}
+    .footer p{
+        font-size: 1.3rem;
+    }
+}
+@media (max-width:600px) {
+    .home-content p{
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .portifolio{
+        margin-top: -8rem;
+    }
+    .portifolio-container {
+        display: block;
+    }
+    .portifolio-box,
+    .portifolio-box img{
+        height: 3%;
+    }
+    .portifolio-box:nth-child(1),
+    .portifolio-box:nth-child(2){
+        display: none;
+    }
+    .contact{
+        margin-top: 1rem;
+    }
+    .contact form .input-box input{ width: 100%;}
+    .footer-iconTop{
+        position: absolute;
+        margin-left: 85%;
+        margin-top: -35%;
+        opacity: .5;
+    }
 }
